@@ -155,3 +155,68 @@ for(i = 0;i<6;i++){
     hollowpyramid += '\n'
 }
 console.log(hollowpyramid);
+
+let diamond = ''
+for(i=0;i<6;i++){
+    for(j = 0;j<5-i;j++){
+        diamond += ' '
+    }
+    for(j = 0;j <2*i-1;j++){
+        diamond+='*'
+    }
+        diamond+='\n'
+    
+  
+
+
+}
+for(i=0;i<6;i++){
+    for(j = 0;j<i;j++){
+        diamond +=' '
+    } 
+    for(k = 0;k< 2*(5-i)-1;k++){
+        diamond += "*"
+    }
+    diamond +='\n'
+}
+console.log("diamond:");
+console.log(diamond);
+
+let hollowdiamond = ''
+
+for(i=0;i<6;i++){
+    for(j = 0;j<5-i;j++){
+        hollowdiamond += ' '
+    }
+    for(j = 0;j <2*i-1;j++){
+        if(j === 0 || j === 2*i-2){
+            hollowdiamond +='*'
+        }
+        else{
+            hollowdiamond += ' '
+        }
+    }
+    hollowdiamond+='\n'
+    
+  
+
+
+}
+for(i=0;i<6;i++){
+    for(j = 0;j<i;j++){
+        hollowdiamond +=' '
+    } 
+    for(k = 0;k< 2*(5-i)-1;k++){
+        if(k === 0 || k ===2*(5-i)-2){
+            hollowdiamond +='*'
+        }
+        else{
+            hollowdiamond += ' '
+        }
+    }
+    hollowdiamond +='\n'
+}
+console.log(
+    "hollow diamond :"
+);
+console.log(hollowdiamond);
